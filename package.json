@@ -1,6 +1,6 @@
 {
   "name": "@lds/universal-env",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Safe, universal environment variables in 3 easy steps",
   "main": "lib/cjs/index.js",
   "module": "lib/es/index.js",
@@ -13,7 +13,8 @@
     "test": "jest --notify",
     "watch:test": "jest --notify --watch",
     "watch:cjs": "npm run build:cjs -- --watch",
-    "watch:es": "npm run build:es -- --watch"
+    "watch:es": "npm run build:es -- --watch",
+    "prepublishOnly": "npm run build"
   },
   "lint-staged": {
     "*.js": [
