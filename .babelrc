@@ -1,0 +1,36 @@
+{
+  "env": {
+    "es": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "browsers": ["last 2 versions"],
+              "node": "current"
+            },
+            "modules": false
+          }
+        ]
+      ],
+      "ignore": ["**/*.test.js", "**/tests/*"]
+    },
+    "test": {
+      "presets": ["env"]
+    },
+    "cjs": {
+      "presets": [
+        [
+          "env",
+          {
+            "targets": {
+              "browsers": ["last 2 versions"],
+              "node": "current"
+            }
+          }
+        ]
+      ],
+      "ignore": ["**/*.test.js", "**/tests/*"]
+    }
+  }
+}
