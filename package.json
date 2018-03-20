@@ -1,6 +1,6 @@
 {
   "name": "@lds/universal-env",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Safe, universal environment variables in 3 easy steps",
   "main": "lib/cjs/index.js",
   "module": "lib/es/index.js",

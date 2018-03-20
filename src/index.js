@@ -1,7 +1,7 @@
 import isBrowser from "is-in-browser";
 import serializeJS from "serialize-javascript";
 
-let vars = isBrowser ? window.__UNIVERSAL_ENV_VARS__ : {};
+let vars = isBrowser ? window.__APP_ENV_VARS__ : {};
 
 export function share(...keys) {
   if (!isBrowser) {
