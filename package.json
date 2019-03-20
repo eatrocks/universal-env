@@ -9,7 +9,6 @@
     "build:cjs": "cross-env  BABEL_ENV=cjs babel src --out-dir lib/cjs",
     "build:es": "cross-env BABEL_ENV=es babel src --out-dir lib/es",
     "clean": "rimraf lib",
-    "precommit": "lint-staged",
     "test": "jest",
     "watch:test": "jest --notify --watch",
     "watch:cjs": "npm run build:cjs -- --watch",
@@ -50,5 +49,10 @@
   "dependencies": {
     "is-in-browser": "^1.1.3",
     "serialize-javascript": "^1.4.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   }
 }
