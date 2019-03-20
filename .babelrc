@@ -3,34 +3,46 @@
     "es": {
       "presets": [
         [
-          "env",
+          "@babel/preset-env",
           {
             "targets": {
-              "browsers": ["last 2 versions"],
+              "browsers": [
+                "last 2 versions"
+              ],
               "node": "current"
             },
             "modules": false
           }
         ]
       ],
-      "ignore": ["**/*.test.js", "**/tests/*"]
+      "ignore": [
+        "**/*.test.js",
+        "**/tests/*"
+      ]
     },
     "test": {
-      "presets": ["env"]
+      "presets": [
+        "@babel/preset-env"
+      ]
     },
     "cjs": {
       "presets": [
         [
-          "env",
+          "@babel/preset-env",
           {
             "targets": {
-              "browsers": ["last 2 versions"],
+              "browsers": [
+                "last 2 versions"
+              ],
               "node": "current"
             }
           }
         ]
       ],
-      "ignore": ["**/*.test.js", "**/tests/*"]
+      "ignore": [
+        "**/*.test.js",
+        "**/tests/*"
+      ]
     }
   }
 }

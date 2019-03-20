@@ -9,50 +9,33 @@
     "build:cjs": "cross-env  BABEL_ENV=cjs babel src --out-dir lib/cjs",
     "build:es": "cross-env BABEL_ENV=es babel src --out-dir lib/es",
     "clean": "rimraf lib",
-    "precommit": "lint-staged",
-    "test": "jest --notify",
+    "test": "jest",
     "watch:test": "jest --notify --watch",
     "watch:cjs": "npm run build:cjs -- --watch",
     "watch:es": "npm run build:es -- --watch",
     "prepublishOnly": "npm run build"
   },
-  "lint-staged": {
-    "*.js": [
-      "prettier --write",
-      "git add"
-    ],
-    "*.json": [
-      "prettier --parser json --write",
-      "git add"
-    ],
-    "*.css": [
-      "prettier --parser postcss --write",
-      "git add"
-    ],
-    "*.graphql": [
-      "prettier --parser graphql --write",
-      "git add"
-    ]
-  },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-eslint": "^7.2.3",
-    "babel-jest": "^20.0.3",
-    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
-    "babel-preset-env": "^1.6.0",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-transform-modules-umd": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.5.0",
     "cross-env": "^5.0.5",
-    "dotenv": "^4.0.0",
-    "env-cmd": "^5.1.0",
-    "eslint": "^3.19.0",
-    "eslint-plugin-flowtype": "^2.35.0",
+    "dotenv": "^7.0.0",
+    "env-cmd": "^8.0.2",
+    "eslint": "^5.15.3",
+    "eslint-plugin-flowtype": "^3.4.2",
     "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-prettier": "^2.2.0",
-    "husky": "^0.14.3",
-    "jest": "^20.0.4",
-    "lint-staged": "^4.0.4",
+    "eslint-plugin-prettier": "^3.0.1",
+    "husky": "^1.3.1",
+    "jest": "^24.5.0",
+    "lint-staged": "^8.1.5",
     "npm-run-all": "^4.1.1",
     "prettier": "^1.6.1",
     "rimraf": "^2.6.1"
