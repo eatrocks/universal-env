@@ -1,0 +1,6 @@
+{
+  "*.js": ["prettier --write", "git add"],
+  "*.json": ["prettier --parser json --write", "git add"],
+  "*.css": ["prettier --parser postcss --write", "git add"],
+  "*.graphql": ["prettier --parser graphql --write", "git add"]
+}
