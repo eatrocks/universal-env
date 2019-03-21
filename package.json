@@ -4,6 +4,7 @@
   "description": "Safe, universal environment variables in 3 easy steps",
   "main": "lib/cjs/index.js",
   "module": "lib/es/index.js",
+  "files": ["lib/"],
   "scripts": {
     "build": "npm-run-all -p build:*",
     "build:cjs": "cross-env  BABEL_ENV=cjs babel src --out-dir lib/cjs",
